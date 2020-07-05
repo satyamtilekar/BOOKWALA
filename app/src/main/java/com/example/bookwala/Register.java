@@ -60,8 +60,17 @@ public class Register extends AppCompatActivity {
                     reg_mail.setError("Required Field..");
                     return;
                 }
+                if(!mEmail.contains("@") || !mEmail.contains(".com"))
+                {
+                    reg_mail.setError("Enter Vaild Email");
+                    return;
+                }
                 if (TextUtils.isEmpty(mPass)){
                     reg_password.setError("Required Field..");
+                    return;
+                }
+                if (TextUtils.isEmpty(mRePass)){
+                    reg_reenterpassword.setError("Required Field..");
                     return;
                 }
                 if (!mPass.equals(mRePass))
@@ -69,6 +78,7 @@ public class Register extends AppCompatActivity {
                     reg_reenterpassword.setError("Password does not match");
                     return;
                 }
+
                 mDialog.setMessage("Processing..");
                 mDialog.show();
 
