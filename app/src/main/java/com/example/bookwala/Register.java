@@ -19,7 +19,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Register extends AppCompatActivity {
-    private EditText first_name,last_name,reg_mail,reg_password;
+    private EditText first_name,last_name,reg_mail,reg_password,reg_reenterpassword;
     private Button reg_button;
 
     private FirebaseAuth mAuth;
@@ -37,7 +37,7 @@ public class Register extends AppCompatActivity {
         last_name=findViewById(R.id.reg_lastname);
         reg_mail=findViewById(R.id.reg_email);
         reg_password=findViewById(R.id.reg_password);
-
+        reg_reenterpassword=findViewById(R.id.reg_reenterpassword);
         reg_button=findViewById(R.id.register_button);
 
         reg_button.setOnClickListener(new View.OnClickListener() {
@@ -47,7 +47,7 @@ public class Register extends AppCompatActivity {
                 String mLastname=last_name.getText().toString().trim();
                 String mEmail=reg_mail.getText().toString().trim();
                 String mPass=reg_password.getText().toString().trim();
-
+                String mRePass=reg_reenterpassword.getText().toString().trim();
                 if (TextUtils.isEmpty(mFirstname)){
                     first_name.setError("Required Field..");
                     return;
@@ -62,6 +62,11 @@ public class Register extends AppCompatActivity {
                 }
                 if (TextUtils.isEmpty(mPass)){
                     reg_password.setError("Required Field..");
+                    return;
+                }
+                if (mPass!=mRePass)
+                {
+                    reg_reenterpassword.setError("Password does not match");
                     return;
                 }
                 mDialog.setMessage("Processing..");

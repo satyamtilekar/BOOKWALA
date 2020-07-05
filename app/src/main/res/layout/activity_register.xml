@@ -67,12 +67,22 @@
         android:hint="Password"
         android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/register_button"
+    <EditText
+        android:id="@+id/reg_reenterpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:layout_below="@id/reg_password"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="Re-Enter Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_below="@id/reg_reenterpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/merriweather_black"
         android:text="Register" />

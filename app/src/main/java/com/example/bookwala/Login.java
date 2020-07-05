@@ -52,11 +52,11 @@ public class Login extends AppCompatActivity {
                 String mPass=log_password.getText().toString().trim();
 
                 if (TextUtils.isEmpty(mEmail)){
-                    email.setError("Required Field..");
+                    log_email.setError("Required Field..");
                     return;
                 }
                 if (TextUtils.isEmpty(mPass)){
-                    pass.setError("Required Field..");
+                    log_password.setError("Required Field..");
                     return;
                 }
 
