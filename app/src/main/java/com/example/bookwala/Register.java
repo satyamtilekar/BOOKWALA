@@ -64,7 +64,7 @@ public class Register extends AppCompatActivity {
                     reg_password.setError("Required Field..");
                     return;
                 }
-                if (mPass!=mRePass)
+                if (!mPass.equals(mRePass))
                 {
                     reg_reenterpassword.setError("Password does not match");
                     return;
