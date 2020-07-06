@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "980723915666",
+    "firebase_url": "https://bookwala-b3800.firebaseio.com",
+    "project_id": "bookwala-b3800",
+    "storage_bucket": "bookwala-b3800.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980723915666:android:4b8a4fdaa47b2e78423f4b",
+        "android_client_info": {
+          "package_name": "com.example.bookwala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980723915666-28vdenrp7kd8q748jpj37l0hmuauemnd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookwala",
+            "certificate_hash": "cb5d38f588345b38ae9e7eafca36b2f1959a54a9"
+          }
+        },
+        {
+          "client_id": "980723915666-3i0if1c82tuomn620hg9fnlca4bp95hi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bookwala",
+            "certificate_hash": "74bb8497b8460c5ef63bae616bf95eb1a1869f7d"
+          }
+        },
+        {
+          "client_id": "980723915666-pp8gou4o8k3p6cqgivv72iag2orqoct2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCafUSSsuAUHTAeY6QPBsjMT0B7rZhGvl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980723915666-pp8gou4o8k3p6cqgivv72iag2orqoct2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
