@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BOOKWALA</string>
+    <string name="title_activity_book_list">MainActivity</string>
+    <string name="title_books">Books</string>
+    <string name="title_add">Add</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_chat">Chat</string>
 </resources>
