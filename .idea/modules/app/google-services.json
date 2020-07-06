@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "980723915666-mdj4u35no14k3nfheht7gijim8ndo63n.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.bookwala",
-            "certificate_hash": "4b8dcd7d1ae4ddfd74ce89c1c5354b0ae5c8b47b"
-          }
-        },
-        {
           "client_id": "980723915666-28vdenrp7kd8q748jpj37l0hmuauemnd.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
