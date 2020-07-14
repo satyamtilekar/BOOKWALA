@@ -6,8 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class Add extends AppCompatActivity {
 
@@ -50,5 +52,15 @@ public class Add extends AppCompatActivity {
                 return false;
             }
         });
+        FloatingActionButton floatingActionButton=findViewById(R.id.floatingActionButton);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Advert.class));
+                Intent intent=new Intent(Add.this,Advert.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }

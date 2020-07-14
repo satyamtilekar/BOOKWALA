@@ -13,8 +13,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
         app:itemBackground="@color/colorPrimary"
-        app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@color/colorwhite"
+        app:itemTextColor="@color/colorwhite"
         app:menu="@menu/menu_navigation" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
