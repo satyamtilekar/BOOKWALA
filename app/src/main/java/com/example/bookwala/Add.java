@@ -57,8 +57,6 @@ public class Add extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),Advert.class));
-                Intent intent=new Intent(Add.this,Advert.class);
-                startActivity(intent);
             }
         });
     }
